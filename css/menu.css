@@ -1,0 +1,400 @@
+/* ---- HEADER PARENT ---- */
+header#default {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	width: 100%;
+}
+
+header#burger {
+	display: none;
+}
+
+/* TOP HEADER */
+div.header-top {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-evenly;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 1.3em;
+
+	width: 70%;
+	/* Pour que les enfants s'adapte au plus proche parent */
+	height: 165px;
+	max-width: var(--taille-max);
+	padding-top: 20px;
+	/*background-color: #ff4b59;*/
+}
+
+div.header-top img.banner-logo {
+	height: 140px;
+	width: auto;
+}
+
+/* TOP HEADER LEFT */
+div.left-header-top {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 20px;
+}
+
+/* TOP HEADER RIGHT */
+div.right-header-top {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 2;
+	align-items: flex-end;
+	justify-content: space-evenly;
+	height: 100%;
+}
+
+div.right-header-top div {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+
+/* Account */
+.account {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 260px;
+	height: 30px;
+}
+
+.account a {
+	font-family: "Roboto", Arial, sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+
+.account a:hover {
+	color: rgb(230, 230, 230);
+	text-decoration: underline solid rgb(230, 230, 230);
+}
+
+.account div.login {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 155px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.account div.login svg {
+	width: 30px;
+	height: auto;
+}
+
+/* Popup Account */
+.account .overlay {
+	background-color: rgba(90, 90, 90, 0.7);
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	width: 100%;
+	height: 100%;
+	/* La popup cache tout le reste */
+	z-index: 50;
+}
+
+.account .overlay:target {
+	display: flex;
+}
+
+.account .popup {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	/* On centre la popup au milieu */
+	margin: auto;
+	padding: 20px;
+	background: #808080;
+	border: solid #000 3px;
+	border-radius: 10px;
+	transition: all 0.5s ease-in;
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.7);
+}
+
+.popup .content-popup {
+	margin: 0 5em;
+}
+
+@media screen and (max-width: 992px) {
+	.popup .content-popup {
+		margin: 0;
+	}
+}
+
+.popup .content-popup > form {
+	display: flex;
+	flex-direction: column;
+}
+
+.popup .content-popup > form input {
+	margin-bottom: 1em;
+}
+
+.popup .content-popup .link-button {
+	background-color: var(--bg-color);
+  padding: 0.2em 0.5em;
+	border-radius: 5px;
+  align-self: center;
+  font-size: 1em;
+}
+
+.account .popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 1.6em;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+}
+
+.account .popup .close:hover {
+	color: #f00;
+}
+
+.account .popup h2 {
+	margin-top: 0;
+}
+
+.account div.register {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 80px;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+
+/* Cart */
+.cart a {
+	font-family: "Roboto", Arial, sans-serif;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	color: white;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+.cart a:hover {
+	color: rgb(230, 230, 230);
+	text-decoration: underline solid rgb(230, 230, 230);
+}
+
+.cart svg {
+	width: 30px;
+	height: 30px;
+}
+
+.panier .overlay {
+	background-color: rgba(90, 90, 90, 0.7);
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	width: 100%;
+	height: 100%;
+	transition: opacity 500ms;
+	/* La popup cache tout le reste */
+	z-index: 50;
+}
+
+.panier .overlay:target {
+	display: flex;
+}
+
+.panier .popup {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	/* On centre la popup au milieu */
+	margin: auto;
+	padding: 20px 50px;
+	background: #808080;
+	border: solid #000 3px;
+	border-radius: 10px;
+	transition: all 2s ease-in;
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.7);
+}
+
+.panier .popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 1.6em;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+}
+
+.panier .popup .close:hover {
+	color: #f00;
+}
+
+.panier .popup .content {
+	max-height: 20%;
+	overflow: auto;
+}
+
+.panier .popup h2 {
+	margin-top: 0;
+}
+
+.panier a {
+	font-family: "Roboto", Arial, sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+
+.panier a:hover {
+	text-decoration: underline;
+}
+
+/* Barre Rechercher */
+.form-search {
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+	border-radius: 5px;
+	width: 200px;
+	height: 30px;
+}
+
+.form-search input {
+	font-family: "Roboto", Arial, sans-serif;
+	background: transparent;
+	border: none;
+	flex: 1;
+	padding: 7px 0;
+}
+
+.btn-search {
+	background: transparent;
+	border: none;
+	padding: 0;
+	width: 30px;
+	height: 100%;
+}
+
+.btn-search img {
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+}
+
+
+/* ---- MENU NAV ---- */
+header#default nav {
+	font-family: "Goldman Regular", cursive;
+	font-size: 1.5em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 70%;
+	max-width: var(--taille-max);
+	min-height: 70px;
+}
+
+header#default nav > div {
+	display: flex;
+	position: relative;
+	cursor: default;
+	padding: 10px 40px;
+}
+
+/* SUBMENU */
+header#default div.submenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 10px 20px 0px #000;
+	text-shadow: none;
+}
+
+header#default nav > div:hover div.submenu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header#default div.submenu div {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+header#default div.submenu a {
+	color: black;
+	font-family: "Roboto", Arial, "Courier New", Courier, monospace;
+	font-size: 0.6em;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+
+header#default div.submenu a:hover {
+	background-color: rgb(200, 200, 200);
+	color: var(--hover-a-color);
+	font-weight: bold;
+}
+
+/* Liens Menus */
+header#default nav a {
+	text-decoration: none;
+	color: rgb(240, 240, 240);
+}
+
+header#default nav > div:hover {
+	color: rgb(238, 255, 218);
+	text-shadow: 0 0 30px #0f0, 0 0 30px #0f0, 0 0 30px #0f0;
+	transition: all 0.3s ease-in;
+}
+
+/* --- QUOTE --- */
+header#default blockquote {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	font-size: 1.2em;
+	border-top: 5px solid;
+	max-width: var(--taille-max);
+	width: 50%;
+	margin: 0;
+	padding: 20px 0;
+}
+
+header#default blockquote p {
+	margin: 0;
+}
+
+
+/* Responsive intermédiaire (1100px) */
+@media screen and (max-width: 1100px) {
+	header#default div.header-top {
+		max-width: none;
+		width: 90%;
+	}
+	header#default nav {
+		max-width: none;
+		width: 100%;
+	}
+}

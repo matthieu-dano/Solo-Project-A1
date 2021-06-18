@@ -1,0 +1,205 @@
+/* Holygrail layout */
+.HolyGrail-body {
+	display: flex;
+	flex: 1;
+}
+
+.HolyGrail-body main {
+	margin: 0 1.5em;
+}
+
+.sommaire,
+aside.pub {
+	background-color: var(--bg-color);
+	color: #000;
+	border-radius: 3px;
+
+	margin-top: 5em;
+	padding: 1em;
+	flex: 0 0 15em;
+
+	text-align: center;
+	height: fit-content;
+}
+
+/* CSS de la pub */
+aside.pub {
+	margin-right: 1.5em;
+}
+
+aside.pub a {
+	color: #000;
+	text-decoration: none;
+}
+
+aside.pub a:hover {
+	color: var(--hover-a-color);
+	font-weight: bold;
+}
+
+aside.pub a .italic {
+	font-style: italic;
+}
+
+aside.pub a img {
+	border-radius: 5px;
+	margin-top: 0.5em;
+	width: 100%;
+	height: auto;
+}
+
+aside.pub a:hover img {
+	filter: contrast(200%);
+}
+
+aside.pub img.horizontal {
+	display: none;
+}
+
+@media screen and (max-width: 992px) {
+		aside.pub img.horizontal {
+			display: block;
+		}
+
+	aside.pub img.vertical {
+		display: none;
+	}
+}
+
+/* CSS du sommaire */
+.sommaire {
+	margin-left: 1.5em;
+}
+
+.liste-sommaire {
+	padding-left: 0;
+	list-style: none;
+}
+
+.liste-sommaire li {
+	margin: 10px 0;
+}
+.liste-sommaire li:last-child {
+	margin: 0;
+}
+
+.liste-sommaire a {
+	text-decoration: none;
+	color: #000;
+}
+
+.liste-sommaire a:hover {
+	font-weight: bold;
+	color: var(--hover-a-color);
+}
+
+
+/* CSS apparence Article */
+main > article {
+	border: 2px solid black;
+	padding: 0 1em;
+  margin-bottom: 1em;
+}
+main > article:last-of-type {
+	margin-bottom: 0;
+}
+
+main h2,
+main h3 {
+	text-align: center;
+}
+
+main > article > p {
+	text-align: justify;
+}
+
+main .title {
+	text-align: center
+}
+
+
+/* Espace commentaire */
+.comment-area {
+  padding: 1em 0;
+}
+
+.Media {
+	display: flex;
+	align-items: flex-start;
+
+	background-color: var(--bg-darker-color);
+	border-radius: 3px;
+	width: 100%;
+	padding: 0.7em;
+	margin-bottom: 1em;
+}
+.profile-picture {
+	width: 40px;
+	height: auto;
+	margin-right: 1em;
+}
+
+.Media-body {
+	flex: 1;
+}
+.Media-title {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0 0 0.5em 0;
+}
+.Media-body p {
+	margin: 0;
+}
+.Media-body aside {
+	font-size: 0.8em;
+	font-style: italic;
+	margin: 0.4em 0;
+	display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* Sous-commentaire */
+.Media-body :last-child {
+	/* Pour éviter l'espace dans les sous-commentaires */
+	margin-bottom: 0;
+}
+.Media-body > .Media p {
+	font-size: 0.9em;
+}
+.Media-body .link-button {
+	background-color: var(--bg-color);
+	padding: 0.2em 1em;
+}
+
+
+/* Espace de création de commentaire */
+.create-comment form > * {
+	margin: 10px 0;
+}
+
+.create-comment textarea {
+	width: 100%;
+  resize: none;
+}
+
+/* Apparence liens de la page */
+main a {
+	color: #000;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+	.HolyGrail-body {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.HolyGrail-body > * {
+		margin: 0 !important;
+		border-radius: 0 !important;
+	}
+
+	.HolyGrail-body .sommaire, .HolyGrail-body aside.pub {
+		flex: none;
+	}
+}

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Solo - Presse</title>
+	<meta name="description" content="Site de vente de sabre laser en tout genre." />
+
+	<!-- On pré-charge les polices -->
+	<link rel="preload" as="font" href="/fonts/Goldman-Regular.ttf" type="font/ttf" crossorigin="anonymous" />
+	<link rel="preload" as="font" href="/fonts/Soloist-blanc.ttf" type="font/ttf" crossorigin="anonymous" />
+	<link rel="preload" as="font" href="/fonts/Roboto-Regular.ttf" type="font/ttf" crossorigin="anonymous" />
+	<!-- On charge les icônes du site -->
+	<link rel="icon" type="image/png" href="img/icons/Logo_Solo_32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/icons/Logo_Solo_64.png" sizes="64x64" />
+	<!-- On charge les scripts css du site -->
+	<link rel="stylesheet" href="./css/menu.css" />
+	<link rel="stylesheet" media="screen and (max-width: 992px)" href="./css/responsive/menu-responsive.css" />
+	<link rel="stylesheet" href="./css/body.css" />
+  <link rel="stylesheet" href="./css/presse_faq.css"/>
+	<link rel="stylesheet" href="./css/footer.css" />
+	<link rel="stylesheet" media="screen and (max-width: 992px)" href="./css/responsive/mobile.css" />
+</head>
+
+<body>
+	<header id="default">
+		<div class="header-top">
+			<div class="left-header-top">
+				<a href="./index.html">
+					<img class="banner-logo" src="./img/icons/Banner_Solo.png"
+						 alt="Bannière du site : Solo - The way of the saber" />
+				</a>
+			</div>
+
+			<div class="right-header-top">
+				<div class="account">
+					<div class="login">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+							<path
+									d="M25,13c0-6.6166992-5.3828125-12-12-12S1,6.3833008,1,13c0,3.383606,1.413208,6.4386597,3.673645,8.6222534  c0.0529175,0.0689087,0.1156006,0.1247559,0.1889648,0.171814C7.0038452,23.7769165,9.8582764,25,13,25  s5.9961548-1.2230835,8.1373901-3.2059326c0.0733643-0.0470581,0.1360474-0.1029053,0.1889648-0.171814  C23.586792,19.4386597,25,16.383606,25,13z M13,2.5c5.7900391,0,10.5,4.7104492,10.5,10.5  c0,2.4549561-0.8532715,4.7108154-2.2702637,6.5008545c-0.6505127-2.0978394-2.5076294-3.7401123-5.0281372-4.4957886  c1.3735962-0.9940796,2.2720337-2.6046143,2.2720337-4.4244995c0-3.0141602-2.4550781-5.4663086-5.4736328-5.4663086  s-5.4736328,2.4521484-5.4736328,5.4663086c0,1.8198853,0.8984375,3.4304199,2.2720337,4.4244995  c-2.5205078,0.7556763-4.3776245,2.3979492-5.0281372,4.4957886C3.3532715,17.7108154,2.5,15.4549561,2.5,13  C2.5,7.2104492,7.2099609,2.5,13,2.5z M9.0263672,10.5805664c0-2.1870117,1.7822266-3.9663086,3.9736328-3.9663086  s3.9736328,1.7792969,3.9736328,3.9663086S15.1914063,14.546875,13,14.546875S9.0263672,12.7675781,9.0263672,10.5805664z   M6.0307617,20.8319702C6.2562256,18.0820313,9.1723633,16.046875,13,16.046875s6.7437744,2.0351563,6.9692383,4.7850952  C18.1130981,22.4855347,15.6757202,23.5,13,23.5S7.8869019,22.4855347,6.0307617,20.8319702z"
+									fill="white"
+							/>
+						</svg>
+						<a href="#popup1" class="login-a">Se connecter</a>
+					</div>
+
+					<div id="popup1" class="overlay">
+						<div class="popup">
+							<h2>Connexion</h2>
+							<a class="close" href="#">&times;</a>
+							<div class="content-popup">
+								<form action="#" method="get">
+									<label for="username-login">Nom d'utilisateur&nbsp;:</label>
+									<input type="text" id="username-login" name="username" placeholder="Entrer le nom d'utilisateur" required />
+									<label for="password-login">Mot de passe&nbsp;:</label>
+									<input type="password" id="password-login" name="password" placeholder="Entrer le mot de passe" required />
+									<input type="submit" class="link-button" id="submit-login" value="Login" />
+								</form>
+							</div>
+							<p><a href="#popup2">Pas encore inscrit&nbsp;? S'inscrire</a></p>
+						</div>
+					</div>
+
+					<span>|</span>
+					<div class="register">
+						<a href="#popup2">S'inscrire</a>
+					</div>
+					<div id="popup2" class="overlay">
+						<div class="popup">
+							<h2>Inscription</h2>
+							<a class="close" href="#">&times;</a>
+							<div class="content-popup">
+								<form action="#" method="get">
+									<label for="user">Nom d'utilisateur&nbsp;:</label>
+									<input id="user" type="text" placeholder="Entrer le nom d'utilisateur" name="username" required />
+
+									<label for="mm">Adresse email&nbsp;:</label>
+									<input id="mm" type="email" placeholder="Entrer votre mail" name="mail" required />
+									<label for="mm2"></label>
+									<input id="mm2" type="email" placeholder="Confirmation de votre mail" name="mail" required />
+
+									<label for="pass">Mot de passe&nbsp;:</label>
+									<input id="pass" type="password" placeholder="Entrer le mot de passe" name="password" required />
+									<label for="pass2"></label>
+									<input id="pass2" type="password" placeholder="Confirmation du mot de passe" name="password" required />
+
+									<input type="submit" id="submit-register" class="link-button" value="Register" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panier">
+					<div class="cart">
+						<a href="#popup3">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+								<path d="M14 36c-2.21 0-3.98 1.79-3.98 4s1.77 4 3.98 4 4-1.79 4-4-1.79-4-4-4zM2 4v4h4l7.19 15.17-2.7 4.9c-.31.58-.49 1.23-.49 1.93 0 2.21 1.79 4 4 4h24v-4H14.85c-.28 0-.5-.22-.5-.5 0-.09.02-.17.06-.24L16.2 26h14.9c1.5 0 2.81-.83 3.5-2.06l7.15-12.98c.16-.28.25-.61.25-.96 0-1.11-.9-2-2-2H10.43l-1.9-4H2zm32 32c-2.21 0-3.98 1.79-3.98 4s1.77 4 3.98 4 4-1.79 4-4-1.79-4-4-4z"
+									  fill="white" />
+							</svg>
+							Panier
+						</a>
+					</div>
+					<div id="popup3" class="overlay">
+						<div class="popup">
+							<h2>Panier</h2>
+							<a class="close" href="#">&times;</a>
+							<div class="content-popup">
+								<p>Votre panier est vide c'est bien dommage, un petit tour en <a href="./boutique.html">Boutique</a></p>
+							</div>
+						</div>
+					</div>
+
+					<form action="#" method="get" class="form-search">
+						<button type="submit" class="btn-search">
+							<img src="./img/materials/svg/search.svg" alt="Icone loupe" />
+						</button>
+						<input type="search" name="q" id="site-search" placeholder="Search" autocomplete="off" />
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<nav>
+			<div>
+				<a href="./boutique.html">Boutique</a>
+			</div>
+
+			<div>
+				<a href="./equipe.html">Équipe</a>
+			</div>
+
+			<div>
+				<a href="./nous_rejoindre.html">Nous rejoindre</a>
+				<div class="submenu">
+					<div><a href="./dev_web.html">Développeur Web</a></div>
+					<div><a href="./infographiste.html">Infographiste</a></div>
+					<div><a href="./sabre_testeur.html">Testeur de sabres</a></div>
+				</div>
+			</div>
+
+			<div>
+				<span>En savoir plus</span>
+				<div class="submenu">
+					<div><a href="./contact.html">Contact</a></div>
+					<div><a href="./FAQ.html">FAQ</a></div>
+					<div><a href="./presse.html">Presse</a></div>
+				</div>
+			</div>
+		</nav>
+
+		<blockquote>
+			<p>Un grand guerrier ? Personne par la guerre ne devient grand</p>
+			<cite>L'Équipe Solo</cite>
+		</blockquote>
+	</header>
+	<header id="burger">
+		<a href="./index.html" id="logo">
+			<img class="logo" src="./img/icons/Banner_Solo.png" alt="Logo du site" width="200" />
+		</a>
+
+		<nav>
+			<label id="burger-checkbox" for="checkbox">
+				<div>
+          <span></span>
+          <span></span>
+          <span></span>
+				</div>
+				<div>Menu</div>
+			</label>
+			<input type="checkbox" id="checkbox" />
+			<div id="menu">
+				<div class="account">
+					<div class="login">
+						<a href="#popup1-mobile" class="login-a">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+								<path
+										d="M25,13c0-6.6166992-5.3828125-12-12-12S1,6.3833008,1,13c0,3.383606,1.413208,6.4386597,3.673645,8.6222534  c0.0529175,0.0689087,0.1156006,0.1247559,0.1889648,0.171814C7.0038452,23.7769165,9.8582764,25,13,25  s5.9961548-1.2230835,8.1373901-3.2059326c0.0733643-0.0470581,0.1360474-0.1029053,0.1889648-0.171814  C23.586792,19.4386597,25,16.383606,25,13z M13,2.5c5.7900391,0,10.5,4.7104492,10.5,10.5  c0,2.4549561-0.8532715,4.7108154-2.2702637,6.5008545c-0.6505127-2.0978394-2.5076294-3.7401123-5.0281372-4.4957886  c1.3735962-0.9940796,2.2720337-2.6046143,2.2720337-4.4244995c0-3.0141602-2.4550781-5.4663086-5.4736328-5.4663086  s-5.4736328,2.4521484-5.4736328,5.4663086c0,1.8198853,0.8984375,3.4304199,2.2720337,4.4244995  c-2.5205078,0.7556763-4.3776245,2.3979492-5.0281372,4.4957886C3.3532715,17.7108154,2.5,15.4549561,2.5,13  C2.5,7.2104492,7.2099609,2.5,13,2.5z M9.0263672,10.5805664c0-2.1870117,1.7822266-3.9663086,3.9736328-3.9663086  s3.9736328,1.7792969,3.9736328,3.9663086S15.1914063,14.546875,13,14.546875S9.0263672,12.7675781,9.0263672,10.5805664z   M6.0307617,20.8319702C6.2562256,18.0820313,9.1723633,16.046875,13,16.046875s6.7437744,2.0351563,6.9692383,4.7850952  C18.1130981,22.4855347,15.6757202,23.5,13,23.5S7.8869019,22.4855347,6.0307617,20.8319702z"
+										fill="white"
+								/>
+							</svg>
+							Sign in
+						</a>
+					</div>
+
+					<div id="popup1-mobile" class="overlay">
+						<div class="popup">
+							<h2>Connexion</h2>
+							<a class="close" href="#">&times;</a>
+							<div class="content1">
+								<form action="#" method="get">
+									<p>
+										<label for="username">Nom d'utilisateur : </label>
+										<input id="username" type="text" placeholder="Entrer le nom d'utilisateur" name="username"
+											   required />
+									</p>
+									<p>
+										<label for="password">Mot de passe : </label>
+										<input id="password" type="password" placeholder="Entrer le mot de passe" name="password" required />
+									</p>
+									<p style="text-align: center">
+										<input type="submit" id="submit-login-mobile" value="LOGIN" />
+									</p>
+								</form>
+							</div>
+							<p><a href="#popup2-mobile" class="login-a">Pas encore inscrit ? S'inscrire</a></p>
+						</div>
+					</div>
+
+					<div id="popup2-mobile" class="overlay">
+						<div class="popup">
+							<h2>Inscription</h2>
+							<a class="close" href="#">&times;</a>
+							<div class="content2">
+								<form action="#" method="get">
+									<p>
+										<label for="username-s">Nom d'utilisateur : </label>
+										<input id="username-s" type="text" placeholder="Entrer le nom d'utilisateur" name="username" required />
+									</p>
+									<p>
+										<label for="email">Adresse email : </label>
+										<input id="email" type="email" placeholder="Entrer votre mail" name="mail" required />
+                    <label for="email2"></label>
+										<input id="email2" type="email" placeholder="Confirmation de votre mail" name="mail" required />
+									</p>
+									<p>
+										<label for="password-s">Mot de passe : </label>
+										<input id="password-s" type="password" placeholder="Entrer le mot de passe" name="password" required />
+                    <label for="password-s2"></label>
+										<input id="password-s2" type="password" placeholder="Confirmation du mot de passe" name="password" required />
+									</p>
+									<p style="text-align: center">
+										<input type="submit" id="submit" value="REGISTER" />
+									</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panier">
+					<div class="cart">
+						<a href="#popup3-mobile">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+								<path d="M14 36c-2.21 0-3.98 1.79-3.98 4s1.77 4 3.98 4 4-1.79 4-4-1.79-4-4-4zM2 4v4h4l7.19 15.17-2.7 4.9c-.31.58-.49 1.23-.49 1.93 0 2.21 1.79 4 4 4h24v-4H14.85c-.28 0-.5-.22-.5-.5 0-.09.02-.17.06-.24L16.2 26h14.9c1.5 0 2.81-.83 3.5-2.06l7.15-12.98c.16-.28.25-.61.25-.96 0-1.11-.9-2-2-2H10.43l-1.9-4H2zm32 32c-2.21 0-3.98 1.79-3.98 4s1.77 4 3.98 4 4-1.79 4-4-1.79-4-4-4z"
+									  fill="white" />
+							</svg>
+							Panier
+						</a>
+					</div>
+
+					<div id="popup3-mobile" class="overlay">
+						<div class="popup">
+							<h2>Panier</h2>
+							<a class="close" href="#">&times;</a>
+							<div class="content3">
+								<p><a href="./boutique.html">Votre panier est vide c'est bien dommage, un petit tour en
+									Boutique</a>
+                </p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="search-bar">
+					<form action="#" method="get" class="form-search">
+						<button type="submit" class="btn-search">
+							<img src="./img/materials/svg/search.svg" alt="Icone loupe" />
+						</button>
+						<input type="search" name="q" id="site-search-mobile" placeholder="Search" autocomplete="off" />
+					</form>
+				</div>
+
+				<div class="menu-link">
+					<a href="./boutique.html">Boutique</a>
+				</div>
+
+				<div class="menu-link">
+					<a href="./equipe.html">Équipe</a>
+				</div>
+
+				<div class="menu-link">
+					<a href="./nous_rejoindre.html">Nous rejoindre</a>
+					<div class="submenu-mobile">
+						<a href="./dev_web.html">
+							<div>Développeur Web</div>
+						</a>
+						<a href="./infographiste.html">
+							<div>Infographiste</div>
+						</a>
+						<a href="./sabre_testeur.html">
+							<div>Testeur de sabres</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="menu-link">
+					<span>En savoir plus</span>
+					<div class="submenu-mobile">
+						<a href="./contact.html">
+							<div>Contact</div>
+						</a>
+						<a href="./FAQ.html">
+							<div>FAQ</div>
+						</a>
+						<a href="./presse.html">
+							<div>Presse</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="HolyGrail-body">
+		<nav class="sommaire">
+			<h2 class="pagetitre">Articles&nbsp;:</h2>
+			<ul class="liste-sommaire">
+				<li><a href="#A1">Tatooine News</a></li>
+				<li><a href="#A2">Rapport Jedi sur leur sabres</a></li>
+				<li><a href="#A3">Histoire du célèbre YT-1300</a></li>
+				<li><a href="#A4">Règle des 2</a></li>
+			</ul>
+		</nav>
+		<main>
+			<article id="A1">
+				<h2>Tatooine News, le retour de la corporation Czerka ?</h2>
+				<h3> Article de Matthieu le 31/08/4356</h3>
+				<p>Pendant des millénaires, Tatooine n'a sucité que peu d'intérêt dans le reste de la galaxie jusqu'à ce que la Corporation Czerka s'y établisse vers l'an 4100 av. J.-C. pour exploiter les ressources naturelles qu'elle croyait enfouies sous sa surface. Les efforts de Czerka dans ce domaine furent vains mais l'environnement hostile de la planète s'avéra propice à l'installation d'une Division Secrète d'Armement.</p>
+				<p>Libre de toute contrainte, Czerka y étudia des technologies aliens et y mena des expériences bien trop horribles ou dangereuses pour être autorisées ailleurs dans la galaxie. Si l'ampleur des recherches conduites par Czerka reste aujourd'hui encore un mystère, le fait est que la corporation entière quitta un jour Tatooine sans prévenir, laissant le sable engloutir sa Division Secrète d'Armement. Il y a quelques jours près de Mos Espa des rodiens ont trouvé les ruines de ces grandes usines d'armement.</p>
+				<div class="comment-area">
+					<h3>Espace commentaire</h3>
+					
+					<div class="Media">
+						<img class="profile-picture" src="./img/profile-picture/lks.png" alt="Profil Fan1">
+						<div class="Media-body">
+							<h4 class="Media-title">Fan1</h4>
+							<p>Quel article intéressant, j'espère avoir la suite un jour ;)</p>
+							<aside class="information">
+    						<a class="link-button" href="#A1">Répondre</a>
+    						<div>Posté le 01/09/4356 à 01h38</div>
+							</aside>
+							<div class="Media">
+								<img class="profile-picture" src="./img/profile-picture/yoyo.png" alt="Profil Matthieu">
+								<div class="Media-body">
+									<h4 class="Media-title">Matthieu</h4>
+									<p>Merci, je me tiens continuellement informé de l'exploration pour publier une suite.</p>
+									<aside class="information">
+    								<a class="link-button" href="#A1">Répondre</a>
+    								<div>Posté le 02/09/4356 à 9h13</div>
+									</aside>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="Media">
+						<img class="profile-picture" src="./img/profile-picture/jarjar.png" alt="Profil Fan2">
+						<div class="Media-body">
+							<h4 class="Media-title">Fan2</h4>
+							<p>Connaisez-vous la Cantina de Chalmun&nbsp;?</p>
+							<aside class="information">
+    						<a class="link-button" href="#A1">Répondre</a>
+    						<div>Posté le 27/09/4356 à 14h59</div>
+							</aside>
+						</div>
+					</div>
+
+					<div class="create-comment">
+						<h4>Laisser un commentaire</h4>
+						<p>Votre adresse de messagerie ne sera pas publiée. Les champs obligatoires sont indiqués avec *</p>
+						<form action="#A1" method="post">
+							<div>
+								<label for="comment-A1">Commentaire *</label>
+								<textarea id="comment-A1" name="comment" rows="8" maxlength="50000" required></textarea>
+							</div>
+							<div>
+								<label for="nom1">Pseudo *</label>
+								<input id="nom1" name="nom" type="text" maxlength="32" required>
+							</div>
+							<div>
+								<label for="email1">Addresse de la messagerie *</label>
+								<input id="email1" name="email" type="email" maxlength="50" required>
+							</div>
+							<div class="inline">
+								<input id="cookies1" name="cookies" type="checkbox" value="yes">
+								<label for="cookies1">Enregistrer mon nom, mon e-mail dans le navigateur pour un futur commentaire</label>
+							</div>
+							<div>
+								<input name="submit" type="submit" class="submit" value="Laisser un commentaire">
+							</div>
+						</form>
+					</div>
+				</div>
+			</article>
+			
+			<article id="A2">
+				<h2>Quelques rapports sur les Jedi et leur sabre</h2>
+				<h3> Article de Matthieu du 14/04/4356</h3>
+				<p> Le sabre laser est plus qu'une arme. C'est le symbole du Jedi, son reflet. Lorsque son niveau est suffisant, le jeune Padawan se construit sa propre arme. La plupart du temps, une tradition veut que le sabre du Padawan se base sur celui de son Maître, non seulement par respect pour lui, mais aussi en hommage aux leçons et aux enseignements de celui-ci. Par la suite, l'arme se transforme ou est remplacée par un autre car le sabre laser évolue en même temps que le Jedi qui le brandit. Il y a un lien inaltérable qui unit le Jedi à son sabre. Quand il le fabrique et le configure seul, il utilise la Force pour unifier les composants (ce qui fait aussi qu'aucune entreprise n'a tenté de se lancer dans la production d'un sabre laser). Le Maître Jedi Luminara Unduli trouva les bons mots pour qualifier cette union entre le Jedi et son bien le plus précieux :</p>
+
+				<p>"Le cristal est le coeur de la lame.
+					Le coeur est le cristal du Jedi.
+					Le Jedi est le cristal de la Force.
+					La Force est la lame du coeur.
+					Tous sont mêlés.
+					Le cristal, la lame, le Jedi
+					Vous êtes un."</p>
+
+				<p>Une autre tradition s'appelle la Concordance de Féauté. Celle-ci consiste à échanger son sabre laser avec celui d'un autre Jedi afin de montrer l'amitié et le respect entre les deux Jedi. Pour l'exemple, Mace Windu et Eeth Koth le pratiquèrent quelques temps après la Bataille de Naboo.</p>
+
+				<p>Les couleurs qui prédominent dans l'Ordre sont le bleu et le vert. Pour les Jedi de l'Ancienne République, chaque couleur était associée à une sorte de caste Jedi. Le bleu était la couleur des Gardiens Jedi qui se focalisaient sur le combat. Le jaune était celle des Jedi Sentinelles qui utilisaient d'autres dons que ceux pour le combat. Enfin, le vert était associé aux Consulaires Jedi qui se basaient sur la maîtrise et la compréhension de la Force. Cela dit, un Jedi possédant un autre cristal pouvait changer sa couleur.</p>
+				<p>Ainsi, on pouvait voir des lames violettes et même des lames rouges dans leur rang. Adi Gallia avait, à un moment donné, un sabre laser à lame rouge et Mace Windu une lame violette. Ce n'est pas la lame qui fait le Jedi, c'est la manière dont il l'utilise.</p>
+
+				<div class="comment-area">
+					<h3>Espace commentaire</h3>
+					
+					<div class="Media">
+						<img class="profile-picture" src="./img/profile-picture/jaba.png" alt="Profil Fan3">
+						<div class="Media-body">
+							<h4 class="Media-title">Fan3</h4>
+							<p>Quel est le comble pour un présentateur de météo sur Bothawui&nbsp;??</p>
+							<aside class="information">
+    						<a class="link-button" href="#A2">Répondre</a>
+    						<div>Posté le 14/04/4356 à 08h01</div>
+							</aside>
+							<div class="Media">
+								<img class="profile-picture" src="./img/profile-picture/c3po.png" alt="Profil Fan4">
+								<div class="Media-body">
+									<h4 class="Media-title">Fan4</h4>
+									<p>Qu'il fasse bothan&nbsp;!!</p>
+									<aside class="information">
+    								<a class="link-button" href="#A2">Répondre</a>
+    								<div>Posté le 14/04/4356 à 10h14</div>
+									</aside>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="create-comment">
+						<h4>Laisser un commentaire</h4>
+						<p>Votre adresse de messagerie ne sera pas publiée. Les champs obligatoires sont indiqués avec *</p>
+						<form action="#A2" method="post">
+							<div>
+								<label for="comment-A2">Commentaire *</label>
+								<textarea id="comment-A2" name="comment" rows="8" maxlength="50000" required></textarea>
+							</div>
+							<div>
+								<label for="nom2">Pseudo *</label>
+								<input id="nom2" name="nom" type="text" maxlength="32" required>
+							</div>
+							<div>
+								<label for="email21">Addresse de la messagerie *</label>
+								<input id="email21" name="email" type="email" maxlength="50" required>
+							</div>
+							<div class="inline">
+								<input id="cookies2" name="cookies" type="checkbox" value="yes">
+								<label for="cookies2">Enregistrer mon nom, mon e-mail dans le navigateur pour un futur commentaire</label>
+							</div>
+							<div>
+								<input name="submit" type="submit" class="submit" value="Laisser un commentaire">
+							</div>
+						</form>
+					</div>
+				</div>
+			</article>
+			
+			<article id="A3">
+				<h2>L'histoire du Faucon Millenium</h2>
+				<h3> Article de Matthieu du 03/02/4355</h3>
+				<p>Le Faucon Millenium est construit durant la République Galactique. Un certain temps après l'avènement de l'Empire V, il entre en la possession de Lando Calrissian, qui y apporte de nombreuses modifications.</p>
+
+				<p>En av. J.-C., Lando accepte d'utiliser son vaisseau pour aider le groupe constitué de Tobias Beckett, Chewbacca, Han Solo et Qi'ra à voler du coaxium brut sur la planète Kessel et vite aller le faire stabiliser sur la planète Savareen, pour le compte de l'Aube Écarlate. À la suite de cette mission, Han Solo réussit à remporter le vaisseau lors d'une partie de sabacc contre Lando, et devient de fait le nouveau propriétaire du Faucon Millenium.</p>
+
+				<p>Han Solo et Chewbacca se servent du vaisseau pour effectuer des missions de contrebande pour le compte de Jabba le Hutt et Han y apporte de nouvelles modifications, jusqu'au jour où le duo fait la rencontre d'un Maître Jedi survivant de l'Ordre 66, Obi-Wan Kenobi, et du fils d'Anakin Skywalker, Luke, qui le paient pour les escorter jusqu'à la planète Alderaan puis pour faire évader la princesse Leia Organa de l'Étoile de la Mort, avant de jouer un rôle crucial dans la destruction de cette dernière en déstabilisant le vaisseau de Dark Vador lors de la Bataille de Yavin.</p>
+
+				<p>À la suite de cet affrontement, le Faucon devient partie prenante de l'Alliance Rebelle, dont Han Solo et Chewbacca sont devenus des membres reconnus. Après s'être enfui de la Bataille de Hoth, il retrouve le chemin de Lando, devenu dirigeant de la Cité des Nuages en orbite autour de la planète Bespin. Lorsque la Cité est envahie par les troupes de l'Empire, Han Solo est capturé et remis au chasseur de prime Boba Fett pour être emmené sur Tatooine tandis que Lando, Chewbacca et Leia ainsi que les droïdes C-3PO et R2-D2 le suivent à bord du Faucon.</p>
+
+				<p>Han Solo est ensuite libéré grâce à un stratagème de Luke et revient aux commandes du vaisseau. Le Faucon, avec Lando Calrissian aux commandes, participe à la Bataille d'Endor en 4 av. J.-C., bataille qui scelle la victoire de l'Alliance Rebelle dans la Guerre Civile Galactique avec la mort de l'Empereur Palpatine et de Dark Vador, ainsi que la destruction de la deuxième Étoile de la Mort.</p>
+
+				<p>Après la fin de la guerre, le vaisseau est volé à Han Solo par un autre contrebandier, Gannis Ducain, qui se le fait à son tour voler par les Irvin, puis une nouvelle fois par Unkar Plutt, et atterrit finalement sur la planète Jakku. En 34 a.p. BY, la pilleuse d'épave Rey et un stormtrooper en fuite, FN-2187, dit Finn, s’approprient le vaisseau pour fuir Jakku, ce qui permet à Han Solo et Chewbacca de le détecter et de le récupérer. À son bord, le groupe rejoint la Résistance, une organisation paramilitaire menée par Leia Organa et luttant contre l'ascension du Premier Ordre, héritier de l'Empire hostile à la Nouvelle République. Han, Chewbacca et Finn pilotent le Faucon pour infiltrer la base Starkiller afin de libérer Rey, capturée par Ben, le fils de Han Solo, et permettre aux vaisseaux de la Résistance de l'infiltrer et de la détruire. Han Solo meurt sur Starkiller, tué par Ben.</p>
+
+				<p>Chewbacca et Rey, derniers occupants du Faucon, se rendent sur la planète Ahch-To pour retrouver Luke Skywalker, exilé après la destruction du Nouvel Ordre Jedi. Le vaisseau participe ensuite à la Bataille de Crait et permet aux derniers survivants de la Résistance de s'échapper à son bord.</p>
+				<div class="comment-area">
+					<h3>Espace commentaire</h3>
+
+					<div class="Media">
+						<img class="profile-picture" src="./img/profile-picture/lks.png" alt="Profil Fan1">
+						<div class="Media-body">
+							<h4 class="Media-title">Fan1</h4>
+							<p>Enfin quelqu'un qui nous donne les origines de ce vaisseau.</p>
+							<aside class="information">
+    						<a class="link-button" href="#A3">Répondre</a>
+    						<div>Posté le 03/02/4355 à 19h38</div>
+							</aside>
+						</div>
+					</div>
+
+					<div class="create-comment">
+						<h4>Laisser un commentaire</h4>
+						<p>Votre adresse de messagerie ne sera pas publiée. Les champs obligatoires sont indiqués avec *</p>
+						<form action="#A3" method="post">
+							<div>
+								<label for="comment-A3">Commentaire *</label>
+								<textarea id="comment-A3" name="comment" rows="8" maxlength="50000" required></textarea>
+							</div>
+							<div>
+								<label for="nom3">Pseudo *</label>
+								<input id="nom3" name="nom" type="text" maxlength="32" required>
+							</div>
+							<div>
+								<label for="email3">Adresse de la messagerie *</label>
+								<input id="email3" name="email" type="email" maxlength="50" required>
+							</div>
+							<div class="inline">
+								<input id="cookies3" name="cookies" type="checkbox" value="yes">
+								<label for="cookies3">Enregistrer mon nom, mon e-mail dans le navigateur pour un futur commentaire</label>
+							</div>
+							<div>
+								<input name="submit" type="submit" class="submit" value="Laisser un commentaire">
+							</div>
+						</form>
+					</div>
+				</div>
+			</article>
+			
+			<article id="A4">
+				<h2>La règles des 2</h2>
+				<h3> Article de Matthieu du 21/09/4354</h3>
+				<P>"Toujours par deux ils vont. Ni plus, ni moins. Le maître et son apprenti."</p>
+				<p>―Le Grand Maître Jedi Yoda évoquant l'ancestrale Règle des Deux</p>
+
+				<p>Après la première chute des Sith, la Règle des Deux est instaurée par le Seigneur Noir des Sith Dark Bane qui devint le fondement le plus important de l'Ordre Sith car il permettait d'assurer sa pérennité en empêchant les guerres de pouvoir intestines entre les différents Seigneurs Sith.</p>
+
+				<p>Pendant un millénaire, cette règle permit aux Sith de survivre et de préparer leur revanche sur l'Ordre Jedi dans l'ombre. Il était peu commun que les Sith dérogent à cette règle et quand cela arrivait, l'erreur était rapidement réparée. Ce fut notamment le cas sous le règne de Dark Sidious qui, après avoir appris la survie de son ancien apprenti Dark Maul et de l'élève qu'il avait lui-même pris, décida en personne de rétablir l'unique et première règle des Sith en abattant cet élève et en emprisonnant Maul.</P>
+				<div class="comment-area">
+					<h3>Espace commentaire</h3>
+					<div class="Media">
+						<img class="profile-picture" src="./img/profile-picture/plag.png" alt="Profil Fan6">
+						<div class="Media-body">
+							<h4 class="Media-title">Fan6</h4>
+							<p>Les vrais Siths ne suivent pas de règles</p>
+							<aside class="information">
+    						<a class="link-button" href="#A4">Répondre</a>
+    						<div>Posté le 21/09/4354 à 22h47</div>
+							</aside>
+						</div>
+					</div>
+					
+					<div class="create-comment">
+						<h4>Laisser un commentaire</h4>
+						<p>Votre adresse de messagerie ne sera pas publiée. Les champs obligatoires sont indiqués avec *</p>
+						<form action="#A4" method="post">
+							<div>
+								<label for="comment-A4">Commentaire *</label>
+								<textarea id="comment-A4" name="comment" rows="8" maxlength="50000" required></textarea>
+							</div>
+							<div>
+								<label for="nom4">Pseudo *</label>
+								<input id="nom4" name="nom" type="text" maxlength="32" required>
+							</div>
+							<div>
+								<label for="email4">Addresse de la messagerie *</label>
+								<input id="email4" name="email" type="email" maxlength="50" required>
+							</div>
+							<div class="inline">
+								<input id="cookies4" name="cookies" type="checkbox" value="yes">
+								<label for="cookies4">Enregistrer mon nom, mon e-mail dans le navigateur pour un futur commentaire</label>
+							</div>
+							<div>
+								<input name="submit" type="submit" class="submit" value="Laisser un commentaire">
+							</div>
+						</form>
+					</div>
+				</div>
+			</article>
+		</main>
+		<aside class="pub">
+      <a href="https://webinfo.iutmontp.univ-montp2.fr/~goupilm/index.html">
+				<div>Marre des dictateurs bons marchés&nbsp;?</div>
+				<div class="italic">Choisissez Smart Président</div>
+        <img src="./img/icons/Smart-president.png" alt="Pub du site Smart President">
+      </a>
+    </aside>
+  </div>
+
+	<footer>
+		<div>
+			<div>
+				<h3>SOLO</h3>
+				<address>
+					<p>IUT de Montpellier Sète</p>
+					<p>99 avenue d'Occitanie</p>
+					<p>Bâtiment K (la zone)</p>
+					<p>34090 Montpellier Cedex 5</p>
+				</address>
+			</div>
+
+			<div>
+				<h3>A propos de nous</h3>
+				<ul class="liste">
+					<li><a href="#">Politique privée</a></li>
+					<li><a href="#">Protection des données</a></li>
+					<li><a href="#">Conditions d'utilisation</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3>Aide</h3>
+				<ul class="liste">
+					<li><a href="./contact.html">Contactez nous</a></li>
+					<li><a href="./FAQ.html">FAQ</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3>Newsletter</h3>
+				<p>Abonnez-vous pour être au courant des dernières nouveautés, offres et styles disponibles&nbsp;!</p>
+				<div class="search-bar">
+					<form action="#" method="get" class="form-search">
+						<button type="submit" class="btn-search">
+							<img src="./img/materials/svg/mail.svg" alt="Icone User" />
+						</button>
+						<input type="email" name="mail" id="newsletter" placeholder="Votre email" />
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<p>Copyright © 1998-2021, Solo-Project, Tous droits réservés</p>
+		</div>
+
+		<a id="vaisseau" href="#">
+			<img src="./img/materials/TIE_fighter.png" alt="Vaisseau pour remonter" />
+		</a>
+	</footer>
+</body>
+</html>

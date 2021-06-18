@@ -1,0 +1,73 @@
+.c1 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
+.title {
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+form p.tres {
+	text-align: center;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-style: outset;
+}
+
+table * {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+tbody td {
+	text-align: center;
+}
+
+th {
+	letter-spacing: 2px;
+}
+
+td {
+	letter-spacing: 1px;
+}
+
+thead th {
+	background-color: #a79d9b;
+}
+
+tbody {
+	background-color: var(--blue-color);
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--bg-darker-color);
+}
+
+caption {
+	text-align: left;
+	letter-spacing: 1px;
+	color: black;
+	padding: 10px;
+	font-weight: bold;
+	font-family: "Roboto", Arial, serif;
+	font-variant: small-caps;
+	font-size: 35px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+input[type="reset"], input[type="submit"] {
+	color: #000;
+	font-size: 20px;
+}

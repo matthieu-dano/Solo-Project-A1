@@ -1,0 +1,165 @@
+/* Conteneur principal */
+header#default {
+	display: none;
+}
+
+header#burger {
+	display: flex;
+	flex-direction: column;
+	/*flex-flow: row wrap;*/
+	align-items: center;
+	/*justify-content: space-evenly;*/
+	width: 100%;
+
+	background-color: #34373e;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 25px;
+}
+
+header#burger nav {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	height: fit-content;
+	padding: 10px;
+}
+
+header#burger a#logo {
+	align-self: center;
+}
+
+/* Arrangement des enfants du burger */
+header#burger label#burger-checkbox {
+	display: flex;
+	align-items: center;
+}
+
+label#burger-checkbox > :first-child {
+	margin-right: 10px;
+}
+
+label#burger-checkbox span:last-of-type {
+	margin-bottom: 0 !important;
+}
+
+label#burger-checkbox {
+  margin-bottom: 5px;
+}
+
+/* Apparence du burger */
+header#burger nav label#burger-checkbox span {
+	display: block;
+	margin-bottom: 5px;
+	/* La forme du burger */
+	width: 40px;
+	height: 5px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+
+header#burger nav input#checkbox {
+	/* On cache la checkbox */
+	display: none;
+}
+
+/* Couleur du texte du menu */
+header#burger nav a,
+header#burger nav span {
+	text-decoration: none;
+	color: #fff;
+	/* Pour les gros doigts, on étire l'enfant */
+	align-self: stretch;
+}
+
+header#burger nav a:hover {
+	color: var(--hover-a-color);
+}
+
+/* CSS du menu */
+header#burger #menu {
+	display: none;
+}
+
+header#burger nav input:checked ~ #menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: solid white 2px;
+}
+
+
+/* CSS de Profil-Panier-Search */
+header#burger div.login,
+header#burger div.cart,
+header#burger div.search-bar {
+	font-size: 20px;
+	margin: 5px 0;
+}
+
+header#burger div.login .login-a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+header#burger div.login svg {
+	width: 30px;
+	margin-right: 5px;
+}
+
+header#burger div.cart a {
+	margin-right: 0;
+}
+
+.form-search {
+	width: 300px;
+}
+
+
+header#burger div#menu .menu-link {
+	display: flex;
+	flex-direction: column;
+
+	background-color: #26282d;
+	border-radius: 5px;
+
+	min-height: 50px;
+	min-width: 300px;
+
+	margin: 10px;
+	padding: 10px 20px;
+}
+
+/* La boîte du submenu (seulement décaler à gauche et en haut) */
+header#burger .menu-link .submenu-mobile {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+/* Les liens du submenu  */
+header#burger .submenu-mobile div {
+	background-color: #34373e;
+	border-radius: 5px;
+
+	margin-right: 10px;
+	margin-bottom: 10px;
+
+	padding: 5px;
+	padding-left: 20px;
+}
+
+
+/* Correction emplacement Sign in */
+.account {
+	width: auto;
+}
+
+.account div.login {
+	width: auto;
+}

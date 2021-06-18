@@ -1,0 +1,63 @@
+/* CSS commun */
+body {
+	background: var(--bg-color);
+}
+
+main {
+	width: 100%;
+	min-width: 0;
+
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+/* Page d'accueil */
+.offre-parent {
+	flex-direction: column;
+}
+
+.offre-parent .offre:first-child {
+	margin-right: 0;
+	margin-bottom: 20px;
+}
+
+.offre-parent .offre {
+	width: 100%;
+	flex-direction: column;
+}
+
+.offre-parent .offre * {
+	margin: 0;
+}
+
+.offre-parent .offre img {
+	margin-bottom: 10px;
+}
+
+/* Pour éviter le problème des formulaires qui dépasse le cadre */
+fieldset *:not([type="radio"]) {
+	width: 100%;
+	text-overflow: ellipsis;
+}
+
+legend {
+	border: groove #c0c0c0 2px;
+	background-color: rgb(236, 236, 236);
+	padding: 0 10px;
+}
+
+/* Pour cacher le tableau de boutique
+.t1 {
+  display: none;
+}
+*/
+
+
+/* Équipe */
+main figure div:hover .texte-cache {
+	display: none;
+}
+
+main figure div:hover img {
+	filter: none;
+}

@@ -1,0 +1,33 @@
+main > div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+main img {
+	width: 250px;
+}
+
+main > div > div {
+	display: flex;
+	flex-direction: column;
+}
+
+main figure:hover {
+	opacity: 0.5;
+}
+
+main figure a {
+	color: #000;
+}
+
+@media screen and (max-width: 1000px) {
+	main > div {
+		flex-direction: column;
+	}
+}
+
+h1 {
+	text-align: center;
+}
